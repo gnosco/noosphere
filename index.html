@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>NooSphere</title>	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  </head>
+  <body>
+    <section class="page-header">
+      <img src="images/Noosphere-logo.png" alt="NooSphere logo" height="150" width="150">
+      <h1 class="project-name">Noosphere</h1>
+      <h2 class="project-tagline">Creating a cognogram of all human beliefs</h2>
+      <a href="https://github.com/gnosco/noosphere" class="btn">Source Code (GitHub)</a>
+      <a href="#infomation" class="btn">Infomation</a>
+      <!-- <a href="https://twitter.com/Noospheregnosco" class="btn">Twitter</a> -->
+      <a id="click_here" onclick="revealForm()" class='btn clicker successful-signup'>Contact Us</a>
+    </section>
+    <section id="signup-section" class="signup-section">
+      <!-- <h2 class="signup-tagline successful-signup">Want to join us?</h2> -->
+      <h2 class="signup-tagline hidden success_message">
+        Thank you for your message!
+      </h2>
+      <form id="registration_form" action="http://formspree.io/contact@credosphere.org" method="POST" class="hidden successful-signup">
+        <input id="name" type="text" name="name" placeholder="name (required)" class="signup-field" required>
+        </br>
+        <input id="email" type="email" name="_replyto" placeholder="email (required)" class="signup-field" required>
+        </br>
+        <textarea id="message" type="text" name="message" placeholder="Tell us about your interest!" class="signup-field" rows="5"></textarea>
+        </br>
+        <input type="hidden" name="_subject" value="Contacting NooSphere" />
+        <input type="hidden" name="_next" value="/#successful-signup" />
+        <input id="register" type="submit" value="Contact Us!" class="btn successful-signup">
+      </form>
+      <h1 id="success_message" class="signup-tagline hidden">
+    </section>
+    <section class="main-content">
+      <h3>
+        <a id="what-is-Noosphere" class="anchor" href="#what-is-Noosphere" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is Noosphere?
+      </h3>
+      <p>
+        Noosphere is a project to index and sort all human beliefs creating a cognogram.
+      </p>
+      <p>
+        The goal of Noosphere is to highlight what is currently known to be scientifically understood to scientific illiterate people in a pragmatically digestible way.
+      </p>
+      <h3>
+        <a id="what-is-a-cognogram" class="anchor" href="#what-is-Noosphere" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a cognogram?
+      </h3>
+      <p>
+        A cognogram is a catalogue or table of beliefs a person holds.
+      </p>
+      <h3>
+        <a id="infomation" class="anchor" href="#infomation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Where can I find more infomation?
+      </h3>
+      <p>
+        A paper describing the technical agenda and construction of the project is on our <a href="https://github.com/gnosco/noosphere/paper">GitHub</a>.
+      </p>
+      <h3>
+        <a id="who-is-backing-this-project" class="anchor" href="#who-is-backing-this-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Who is backing this project?
+      </h3>
+      <p>
+        We are looking for collaborators and suggestions. 
+      </p>
+      <h3>
+        <a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>How can I contribute?
+      </h3>
+      <p>
+        Noosphere needs your help finding scientific studies and statements of belief. The team is currently researching options on how to do this. Let us know if you would like infomation once we decide on a method of approach.
+      </p>
+      <h3>
+        <a id="questions" class="anchor" href="#questions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Questions?
+      </h3>
+      <p>
+        For further questions, please <a href="mailto:contact@credosphere.org">contact us</a>.
+      </p>
+      <footer class="site-footer">
+        <span class="site-footer-credits">This page is a modification of the <a href="https://pages.github.com">GitHub Pages</a> <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+    </section>
+    <script type="text/javascript">
+      $(document).ready(function () {
+          if(window.location.href.indexOf("successful-signup") > -1) {
+            $('#registration_form').hide();
+            $('.success_message').show();
+          }
+      });
+      function revealForm () {
+                              $('#registration_form').show();
+                             };
+    </script>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-000000000-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
